@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube </title>
+    <meta name="description" content="YouTube style video grid UI project">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="ytheader">
+        <div class="lftheader">
+
+            <i class="fa-solid fa-bars" id="menuBtn"></i>
+
+            <a class="brand" href="#"><i class="fa-brands fa-youtube"></i><span>YouTube</span></a>
+
+        </div>
+
+        <form class="search" role="search" onsubmit="return false">
+            <input id="searchInput" type="text" placeholder="Search" aria-label="Search" />
+            <button type="submit" class="search-btn" aria-label="Search button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button type="button" class="icon-btn mic" aria-label="Voice search">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+            <div class="suggestions" id="suggestions"></div>
+        </form>
+
+        <div class="right">
+            <button class="icon-btn" aria-label="Create">
+                <i class="fa-solid fa-video"></i>
+            </button>
+            <button class="icon-btn" aria-label="Notifications">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+            <div class="avatar" aria-label="Account">S</div>
+        </div>
+
+    </header>
+
+    <div class="layout">
+
+
+        <aside class="sidebar">
+            <nav>
+                <a class="active" href="#"><i class="fa-solid fa-house"></i><span>Home</span></a>
+                <a href="#"><i class="fa-solid fa-bolt"></i><span>Shorts</span></a>
+                <a href="#"><i class="fa-regular fa-circle-play"></i><span>Subscriptions</span></a>
+                <hr />
+                <a href="#"><i class="fa-regular fa-user"></i><span>Your channel</span></a>
+                <a href="#"><i class="fa-regular fa-clock"></i><span>History</span></a>
+                <a href="#"><i class="fa-regular fa-circle-check"></i><span>Watch later</span></a>
+                <a href="#"><i class="fa-regular fa-thumbs-up"></i><span>Liked videos</span></a>
+                <hr />
+                <p class="section-title">Explore</p>
+                <a href="#"><i class="fa-solid fa-fire"></i><span>Trending</span></a>
+                <a href="#"><i class="fa-solid fa-music"></i><span>Music</span></a>
+                <a href="#"><i class="fa-solid fa-gamepad"></i><span>Productivity</span></a>
+                <a href="#"><i class="fa-solid fa-newspaper"></i><span>Art</span></a>
+                <a href="#"><i class="fa-solid fa-trophy"></i><span>Skills</span></a>
+                <a href="#"><i class="fa-solid fa-trophy"></i><span>Routine</span></a>
+                <a href="#"><i class="fa-solid fa-trophy"></i><span>Self-growth</span></a>
+                <a href="#"><i class="fa-solid fa-trophy"></i><span>Improvement</span></a>
+            </nav>
+        </aside>
+
+
+        <main class="content">
+
+            <div class="chips">
+                <button class="chip active">All</button>
+                <button class="chip">Music</button>
+                <button class="chip">Art</button>
+                <button class="chip">Skills</button>
+                <button class="chip">Mixes</button>
+                <button class="chip">Gaming</button>
+                <button class="chip">Live</button>
+                <button class="chip">Comic books</button>
+                <button class="chip">Movies</button>
+                <button class="chip">Cartoon</button>
+            </div>
+
+
+            <section class="grid">
+
+                
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315"
+                            src="https://www.youtube.com/embed/Z6cImDHIuw0?si=QuJ-Rz8Web03NjZz&enablejsapi=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title">Masters VS Warriors: All the Best FIGHTS in KUNG FU PANDA 💛⚡ 4K</h3>
+                        <div class="channel"> Boxoffice ANIMATION ☆ Movie Scenes </div>
+                        <div class="stats">260k views • 3 weeks ago</div>
+                    </div>
+                </article>
+                
+
+
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/UYGDlC1J9XY?enablejsapi=1&mute=1"
+                            title=" YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                             <span class="duration">10:24</span>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title">Prepping My 1600Hp Mr2 For The BIGGEST Race Of The Year!</h3>
+                        <div class="channel"> BoostedBoiKyle</div>
+                        <div class="stats">31K views • 2 weeks ago</div>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315"
+                            src="https://www.youtube.com/embed/Rv1Ecz0J8vk?si=5Y-oVx8jOPGCFxfu&enablejsapi=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="meta">
+                        <h3 class="title"> Don't Waste your Money - $30 vs $10,000 Racing Setup</h3>
+                        <div class="channel">Linus Tech Tips</div>
+                        <div class="stats">3.5M views • 2 years ago</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315"
+                            src="https://www.youtube.com/embed/VHAK-gU9gi0?si=vmjRXhFvyQXenzZo&enablejsapi=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title">Bye Bye Bye Opening Scene | DEADPOOL & WOLVERINE (2024) Movie CLIP HD</h3>
+                        <div class="channel">JoBlo Movie Clips</div>
+                        <div class="stats">47M views • 11 months ago</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315"
+                            src="https://www.youtube.com/embed/OO7YWIzHG9w?si=_KdbHoF4XnKGKeow&enablejsapi=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title"> Miles Escapes Spider HQ | Spider-Man: Across the Spider-Verse | Now Sci-Fi
+                        </h3>
+                        <div class="channel">NOW SCI-FI</div>
+                        <div class="stats">1.83M views • 8 months ago</div>
+                    </div>
+                </article>
+
+                
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315"
+                            src="https://www.youtube.com/embed/0qrbexZFRa8?si=ACannjPDgoYqFi9T&enablejsapi=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title">Rajinikanth Robo Telugu Full HD Movie | Aishwarya Rai Bachchan | Blockbuster
+                            Sci-Fi |‪@Fixmedia-f3l‬</h3>
+                        <div class="channel">Fix media</div>
+                        <div class="stats">7.7M views • 2 month ago</div>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315"
+                            src="https://www.youtube.com/embed/YW2hoMFqecU?si=r1Nmm7-v0khVUSts&enablejsapi=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title">The Ghost Rider’s First Ride | Ghost Rider (2007)</h3>
+                        <div class="channel">NOW PLAYING</div>
+                        <div class="stats">22M views • 2 years ago</div>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315"
+                            src="https://www.youtube.com/embed/yngKXEBALE0?si=ML8oi_ryFVva32il&enablejsapi=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title">Batman v Superman: Dawn of Justice | EPIC Fight Scene! | ClipZone: Heroes &
+                            Villains</h3>
+                        <div class="channel">ClipZone: Heroes & Villains</div>
+                        <div class="stats">26M views • 4 years ago</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315"
+                            src="https://www.youtube.com/embed/VHAK-gU9gi0?si=vmjRXhFvyQXenzZo&enablejsapi=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title">Bye Bye Bye Opening Scene | DEADPOOL & WOLVERINE (2024) Movie CLIP HD</h3>
+                        <div class="channel">JoBlo Movie Clips</div>
+                        <div class="stats">47M views • 11 months ago</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315"
+                            src="https://www.youtube.com/embed/0qrbexZFRa8?si=ACannjPDgoYqFi9T&enablejsapi=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title">Rajinikanth Robo Telugu Full HD Movie | Aishwarya Rai Bachchan | Blockbuster
+                            Sci-Fi |‪@Fixmedia-f3l‬</h3>
+                        <div class="channel">Fix media</div>
+                        <div class="stats">7.7M views • 2 month ago</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/UYGDlC1J9XY?enablejsapi=1&mute=1"
+                            title=" YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                             <span class="duration">10:24</span>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title">Prepping My 1600Hp Mr2 For The BIGGEST Race Of The Year!</h3>
+                        <div class="channel"> BoostedBoiKyle</div>
+                        <div class="stats">31K views • 2 weeks ago</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315"
+                            src="https://www.youtube.com/embed/Z6cImDHIuw0?si=QuJ-Rz8Web03NjZz&enablejsapi=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title">Masters VS Warriors: All the Best FIGHTS in KUNG FU PANDA 💛⚡ 4K</h3>
+                        <div class="channel"> Boxoffice ANIMATION ☆ Movie Scenes </div>
+                        <div class="stats">260k views • 3 weeks ago</div>
+                    </div>
+                </article>
+
+
+                   <article class="card">
+                    <div class="thumb iframe-wrap">
+                        <iframe class="video-frame" width="560" height="315"
+                            src="https://www.youtube.com/embed/yngKXEBALE0?si=ML8oi_ryFVva32il&enablejsapi=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="meta">
+
+                        <h3 class="title">Batman v Superman: Dawn of Justice | EPIC Fight Scene! | ClipZone: Heroes &
+                            Villains</h3>
+                        <div class="channel">ClipZone: Heroes & Villains</div>
+                        <div class="stats">26M views • 4 years ago</div>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+    </div>
+   
+        <script src="script.js"></script>
+</body>
+
+</html>
