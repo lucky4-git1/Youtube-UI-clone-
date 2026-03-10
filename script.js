@@ -1,4 +1,5 @@
-
+const menuBtn = document.getElementById("menuBtn")
+const sidebar = document.querySelector(".sidebar")
         const searchInput = document.getElementById("searchInput")
         const suggestions = document.getElementById("suggestions")
 
@@ -83,34 +84,29 @@ sidebar.classList.toggle("collapsed")
         
         /* VIDEO HOVER PREVIEW */
 
-        const cards = document.querySelectorAll(".video-frame ")
+      const frames = document.querySelectorAll(".video-frame")
 
-        cards.forEach(card => {
+frames.forEach(frame => {
 
-            const iframe = card.querySelector("iframe")
+frame.addEventListener("mouseenter", () => {
 
-            if (!iframe) return
+frame.contentWindow.postMessage(
+'{"event":"command","func":"playVideo","args":""}',
+'*'
+)
 
-            card.addEventListener("mouseenter", () => {
+})
 
-                iframe.contentWindow.postMessage(
-                    '{"event":"command","func":"playVideo","args":""}',
-                    '*'
-                )
+frame.addEventListener("mouseleave", () => {
 
-            })
+frame.contentWindow.postMessage(
+'{"event":"command","func":"pauseVideo","args":""}',
+'*'
+)
 
-            card.addEventListener("mouseleave", () => {
+})
 
-                iframe.contentWindow.postMessage(
-                    '{"event":"command","func":"pauseVideo","args":""}',
-                    '*'
-                )
-
-            })
-
-        })
-
+})
         /* NAVBAR SCROLL EFFECT */
 
 const header = document.querySelector(".ytheader")
