@@ -29,7 +29,7 @@ export async function processWebhook(event: any) {
 }
 
 async function fetchPayment(id: string) {
-  const res = awa fetch(`https://payments.example.com/charges/${id}`);
+  const res = await fetch(`https://payments.example.com/charges/${id}`);
   return res.json();
 }
 
